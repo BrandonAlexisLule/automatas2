@@ -1,0 +1,18 @@
+Instrucciones del juego del Gato:
+
+=> 1. Al momento de iniciar el juego, se debe revisar en el archivo "matriz.txt", que todos los valores sean una matriz de 3x3 como la siguiente.
+
+    [0,0,0]
+    [0,0,0]
+    [0,0,0]
+
+=> 2. A continuación, se debe verificar en dicha matriz que los todos los valores sean ceros.
+=> 3. Debe verificarse que la longitud del arreglo sea la misma tanto fila como columna. 
+=> 4. El código del juego debe tener una función que lea el archivo "juegoGato.txt" y que a la vez lea el otro archivo "matriz.txt" e indique qué letra o caracter empezó dicha partida del gato.
+=> 5. El paso anterior también lleva a que se debe hacer una validación de a quien le corresponde el próximo turno.
+=> 6. Para contar los movimientos, se debe crear una bandera para los mismos, aparte, debe de haber una función que recorra todo el arreglo e identifique si hay letras o caracteres con los cuales se jugaron la partida, esto es para que en consola, imprima el número de movimientos realizados durante la partida.
+=> 7. Debe haber otra función que valide en el archivo "matriz.txt" si un jugador durante el juego, realiza doble jugada en un solo turno, en consola se muestre un mensaje de que la "ronda ha finalizado por trampa. Debe iniciarse nuevo juego".
+=> 8. Debe validarse que en juego en proceso, que es imposible que se conecten 3 caracteres en línea en los primeros cuatro movimientos, ya que anteriormente se hizo una función para validar que se hizo doble tiro en un mismo turno.
+=> 9a. A partir del 5to movimiento, ya hay posibilidades de ganar, ya que se dieron los turnos de cada jugador en cada ronda, por lo cual van 4 movimientos sin ganar, en el próximo movimiento se debe validar en el archivo "matriz.txt", si ya hay 3 caracteres o letras en línea, en caso afirmativo, se debe enviar un mensaje por consola que diga que la persona x ganó la partida y los movimientos realizados durante la partida. En caso contrario el juego debe seguir hasta que se encuentre en el arreglo 3 caracteres iguales en una línea.
+=> 9b. Aclarando sobre las líneas, el jugador puede conectar 3 líneas en forma vertical, horinzotal, o en diagonal izquierda o derecha.
+=> 10. El arreglo del archivo "matriz.txt", se debe recorrer para indicar que en caso de que ningún jugador haya podido conectar 3 líneas, imprima un mensaje por consola "de que ninguno ganó la partida". Ya que la cantidad de movimientos totales del juego deben ser 9.

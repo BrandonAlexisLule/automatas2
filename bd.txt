@@ -1,0 +1,4 @@
+CREATE DEFINER = 99940 BEETHOVEN DASH ' admin@localhost ' PROCEDURE account_count ( )
+BEGIN
+SELECT 'number of accounts:' , COUNT (*) FROM mysql.user;
+END
